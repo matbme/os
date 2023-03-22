@@ -68,10 +68,8 @@ build () {
 # LIVE-BUILD BUILD #
 #------------------#
 "
+  lb build || true
   lb build
-  if [ $? -eq 123 ]; then
-    lb build
-  fi
 
   echo -e "
 #---------------------------#
